@@ -1,5 +1,5 @@
 # ***************************************************
-#   Keyboard teleop control for KKA youBot
+#   Keyboard teleop control for KUKA youBot
 # ***************************************************
 
 import rospy
