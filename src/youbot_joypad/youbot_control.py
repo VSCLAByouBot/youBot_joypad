@@ -71,7 +71,7 @@ class youbot_arm_control:
         if self.current_joint[joint_num[0]] > self.max_limit[joint_num[0]]:
             print('Arrived the maximum limitation of joint #', joint_num[0]+1, ' : ', self.max_limit[joint_num[0]], ' (rad).')
             return [0.0, 0.0, 0.0, 0.0, 0.0]
-        elif self.current_joint[joint_num[0]] > self.min_limit[joint_num[0]]:
+        elif self.current_joint[joint_num[0]] < self.min_limit[joint_num[0]]:
             print('Arrived the minimum limitation of joint #', joint_num[0]+1, ' : ', self.min_limit[joint_num[0]], ' (rad).')
             return [0.0, 0.0, 0.0, 0.0, 0.0]
         else:
